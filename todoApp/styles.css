@@ -1,0 +1,91 @@
+body{
+    background-color: blue;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.main{
+    max-width: 600px;
+    background-color: aqua;
+    padding: 20px 30px 50px;
+    margin: 150px auto 15px;
+    border-radius: 15px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="text"]{
+    width: 70%;
+    padding: 15px;
+    border: 2px solid rebeccapurple; 
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 20px;
+
+}
+
+.btn{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5rem;
+
+
+}
+
+.btn:hover{
+    background-color: rgb(112, 70, 160);
+}
+ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 10px 6px 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "☐";
+    font-size: 25px;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+}
+#list{
+    padding: 0px 30px;
+
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(209, 207, 72);
+    
+}
+
+ul li.checked::before{
+    content: "☑";
+    color: rgb(209, 207, 72);
+
+}
+
+ul li span{
+    position: absolute;
+    top: 1.8px;
+    right: 5px;
+    font-size: 2rem;
+    color: yellow;
+}
